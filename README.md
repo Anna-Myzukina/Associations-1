@@ -29,6 +29,26 @@
 
 ![](https://github.com/Anna-Myzukina/associations/blob/master/app/assets/images/short%20commands.png)
 
+### Future features:
+* Users can upload photos of future events.
+* Users can create calendar with events.
+* Users can add comments to events.
+
+
+## Authors
+
+👤 **Author1**
+
+- Github: [Maya](https://github.com/maya88en)
+
+👤 **Author2**
+
+- Github: [@Anna-Myzukina](https://github.com/githubhandle)
+- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
+- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
+- email: anna.muzykina83@gmail.com
+
+
 ### Box 7.1.RRT: Rails environments
 *Rails comes equipped with three environments: test, development, and production. The default environment for the Rails console is development:
 
