@@ -35,20 +35,6 @@
 * Users can add comments to events.
 
 
-## Authors
-
-👤 **Author1**
-
-- Github: [Maya](https://github.com/maya88en)
-
-👤 **Author2**
-
-- Github: [@Anna-Myzukina](https://github.com/githubhandle)
-- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
-- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
-- email: anna.muzykina83@gmail.com
-
-
 ### Box 7.1.RRT: Rails environments
 *Rails comes equipped with three environments: test, development, and production. The default environment for the Rails console is development:
 
@@ -1221,7 +1207,12 @@ Give a ⭐️ if you like this project!
 ## Authors:
 
 👤 **Author1**
-* [Anna Muzykina](https://github.com/Anna-Myzukina)
+- Github: [@Anna-Myzukina](https://github.com/githubhandle)
+- Twitter: [@AnnaMuzykina](https://twitter.com/twitterhandle)
+- Linkedin: [Anna Muzykina](https://linkedin.com/linkedinhandle)
+- email: anna.muzykina83@gmail.com
 
 👤 **Author2**
 * [Emogene Akwiri](https://github.com/Elukoye)
+
+
