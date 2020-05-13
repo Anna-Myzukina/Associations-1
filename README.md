@@ -3,35 +3,35 @@
 # The Odin Project: [Private Events](https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations)
 ![Peek 2020-03-13 14-32 (1)](https://user-images.githubusercontent.com/46542515/80397082-4c179880-88be-11ea-8180-8ac18824d1a7.gif)
 
-## Live version of project :  [Private Events](https://warm-sea-24354.herokuapp.com/)
+## A Live version of the project:  [Private Events](https://warm-sea-24354.herokuapp.com/)
 
 
 ## Description:
 
-* NOTE: This is in NO WAY a comprehensive walkthrough of the steps I used in the build, its just a rough set of notes for myself on the latest Odin Project app, Private Events. I've missed loads of bits out, most of it is html stuff, the main flow at the start is all in the correct order following the steps on the site so you could follow along, but at points things wouldn't work so you would need to dig into the code to find the missing things from these notes. Apart from that, it all works.
+* NOTE: This is in NO WAY a comprehensive walkthrough of the steps I used in the build, it is just a rough set of notes for myself on the latest Odin Project app, Private Events. I've missed loads of bits out, most of it is HTML stuff, the main flow at the start is all in the correct order following the steps on the site so you could follow along, but at points, things wouldn't work so you would need to dig into the code to find the missing things from these notes. Apart from that, it all works.
 
 * Our Objective:
 
-    We have to build a site similar to an [Eventbrite](https://www.eventbrite.com/) which allows users to create events and then manage user signups. I must be honest, I decided to cheat a little with this project and completely miss out the first part which was to setup the sign-in mechanism. I started with a copy and paste from our build of the rails tutorial up-to chapter 10. The reason I did this was I wanted to create a proper full featured application that I could use in production, so i wanted to save some time.
+    We have to build a site similar to an [Eventbrite](https://www.eventbrite.com/) which allows users to create events and then manage user signups. I must be honest, I decided to cheat a little with this project and completely miss out on the first part which was to set up the sign-in mechanism. I started with a copy and paste from our build of the rails tutorial up-to chapter 10. The reason I did this was I wanted to create a proper full-featured application that I could use in production, so I wanted to save some time.
 
 ### Features:
 
 * A user can register for an account
-* A user can login 
+* A user can log in 
 * A user can change their account details
 * A user can create events
 * A user can attend events
 * And a user can logout
 
-* Bootstrap source in vendor/assets
-* Font awesome CSS source
+* A Bootstrap source in vendor/assets
+* Font Awesome CSS source
 * Google Analytics Integration
 
 ![](https://github.com/Anna-Myzukina/associations/blob/master/app/assets/images/short%20commands.png)
 
 ### Future features:
 * Users can upload photos of future events.
-* Users can create calendar with events.
+* Users can create a calendar with events.
 * Users can add comments to events.
 
 
@@ -76,13 +76,13 @@ As with the console, development is the default environment for the Rails server
 
     $ rails server --environment production
   
-If you view your app running in production, it won’t work without a production database, which we can create by running rails db:migrate in production:
+If you view your app running in production, it won’t work without a production database, which we can create by running rails `db:migrate` in production:
 
     $ rails db:migrate RAILS_ENV=production
   
 (I find it confusing that the idiomatic commands to run the console, server, and migrate commands in non-default environments use different syntax, which is why I bothered showing all three. It’s worth noting, though, that preceding any of them with RAILS_ENV=<env> will also work, as in RAILS_ENV=production rails server).
 
-By the way, if you have deployed your sample app to Heroku, you can see its environment using heroku run rails console:
+By the way, if you have deployed your sample app to Heroku, you can see its environment using Heroku run rails console:
 
       $ heroku run rails console
       >> Rails.env
@@ -92,14 +92,14 @@ By the way, if you have deployed your sample app to Heroku, you can see its envi
   
 Naturally, since Heroku is a platform for production sites, it runs each application in a production environment.
 
-- [x] We can see the result of all this work by signing up the first user for the sample app. 
+- [x] We can see the result of all this work by signing up for the first user for the sample app. 
 Even though previous submissions didn’t work properly (as shown in Figure 7.20), 
-the user.save line in the Users controller still works, so users might still have been created. 
-To clear them out, we’ll reset the database as follows: * This command sometimes useful ufter create signup form to reset database:
+the `user.save` line in the Users controller still works, so users might still have been created. 
+To clear them out, we’ll reset the database as follows: * This command sometimes useful for creating signup form to reset database:
 
      rails db:migrate:reset
 
-### Let's start build app:
+### Let's start to build the app:
 
 1. create app
 
@@ -147,13 +147,13 @@ To clear them out, we’ll reset the database as follows: * This command sometim
             gem 'pg', '0.20.0'
             end
 
-            # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+            # Windows does not include `zoneinfo` files, so bundle the `tzinfo-data` gem
             gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
         
         
 
-After run next commands:
+After running the next commands:
 
              bundle install
              
@@ -175,7 +175,7 @@ You can add next to see that your app working
 ## Create Static Page
 
 * next command should generate two pages -home- and -about-
-* now automatically generates home.html.erb and about.html.erb,here appare default content in this files to see what we
+* now automatically generates home.html.erb and about.html.erb,here appear default content in this files to see what we
 have you can visit localhost:3000/static_pages/home or localhost:3000/static_pages/about
 
         rails generate controller StaticPages home about
@@ -186,7 +186,7 @@ have you can visit localhost:3000/static_pages/home or localhost:3000/static_pag
         
 
         
-## Next step we start generate Model-View-Controller (MVC):
+## Next step we start to generate Model-View-Controller (MVC):
 ![](https://github.com/Anna-Myzukina/asoosciation/blob/master/app/assets/images/MVC.png)
 
 # User
@@ -220,7 +220,7 @@ app/models/user.rb
 
 
 * Here the regex VALID_EMAIL_REGEX is a constant, indicated in Ruby by a name starting with a capital letter.
-* To enforce uniqueness of email addresses (so that we can use them as usernames), we’ll be using the :uniqueness option to the validates method
+* To enforce uniqueness of email addresses (so that we can use them as usernames), we’ll be using the: uniqueness option to the validates method
 
 The email index represents an update to our data modeling requirements, which (as discussed in Section 6.1.1) is handled in Rails using migrations. We saw in Section 6.1.1 that generating the User model automatically created a new migration (Listing 6.2); in the present case, we are adding structure to an existing model, so we need to create a migration directly using the migration generator:
 
